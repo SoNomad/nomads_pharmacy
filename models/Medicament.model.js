@@ -4,7 +4,7 @@ const medicamentSchema = mongoose.Schema({
   name: String,
   category: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "prodCategory",
+    ref: "medCategory",
   },
   needPermission: Boolean,
   price: Number,
